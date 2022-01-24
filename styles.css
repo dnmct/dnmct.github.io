@@ -22,6 +22,11 @@ body {
   color: var(--text-color);
 }
 
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
 .page-wrapper {
   width: 70%;
   margin: auto;
@@ -66,8 +71,6 @@ header li {
 }
 
 header li a {
-  color: var(--text-color);
-  text-decoration: none;
   padding: 0 0.5rem;
 }
 
@@ -165,4 +168,38 @@ main {
 .skill-react {
   width: 95%;
   background-color: var(--accent-color);
+}
+
+/* ---------------------- */
+/* Blog */
+/* ---------------------- */
+
+.post {
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+  border: 1px solid var(--tint-color);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.post:hover {
+  background-color: var(--tint-color);
+}
+
+/* ---------------------- */
+/* Post */
+/* ---------------------- */
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.6rem;
+}
+
+.back-link:hover {
+  color: var(--tint-color);
+}
+
+.back-link:hover .back-arrow {
+  color: var(--accent-color);
 }
