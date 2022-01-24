@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=k, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Post 1 - My Portfolio</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header>
+        <a href="/">
+          <div class="logo"></div>
+          <!-- <img src="logo.svg" alt="" /> -->
+        </a>
+        <nav>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li>
+              <a href="blog.html">Blog</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div>
+          <a class="back-link" href="blog.html">
+            <span class="back-arrow">«</span>
+            Back to Blog
+          </a>
+        </div>
+        <h1 class="main-heading">Functional JavaScript</h1>
+        <p class="paragraph">JavaScript gives us a lot of freedom.</p>
+        <p class="paragraph">
+          The freedom to change the type of an initialized variable, for
+          example. But also the freedom to try out different paradigms.
+          JavaScript doesn't have a fixed paradigm — we can write
+          object-oriented, imperative, and even functional code.
+        </p>
+        <p class="paragraph">
+          While I see a lot of object-oriented and imperative JS code, the
+          latter one seems underestimated. Functional programming isn’t easy —
+          and misunderstood.
+        </p>
+        <p class="paragraph">
+          Time to give a beginner-friendly introduction to this paradigm in
+          JavaScript. Here are the main concepts explained. Of course, you won’t
+          be turned into a full-fledged functional programmer. But hopefully,
+          this introduction will give you the overview and answers to the why
+          and how.
+        </p>
+        <h2 class="article-heading">
+          Understanding the Philosophy of Functional Code
+        </h2>
+        <p class="paragraph">
+          Understanding is essential for applying. And the right motivation
+          helps a lot with learning.
+        </p>
+        <p class="paragraph">
+          Many people think functional programming means writing as many
+          functions as possible. I would argue that writing a lot of functions
+          is the consequence of functional programming. Let’s demystify it and
+          get aware of the goals of this programming paradigm.
+        </p>
+        <p class="paragraph">
+          Functional programming resolves mainly around expressions. Since
+          function calls are expressions, writing functions is essential in
+          functional programming. But wait — expressions? What does that mean?
+        </p>
+        <h3 class="article-sub-heading">Statements and expressions</h3>
+        <p class="paragraph">
+          Our written code can be divided into two groups: Statements and
+          expressions.
+        </p>
+        <p class="paragraph">
+          An expression is a syntactic entity that can be evaluated. You can
+          imagine an expression as something that returns something when it is
+          executed. For example, calling a function that returns something is an
+          expression. Also, calling a variable is an expression since we receive
+          its value.
+        </p>
+        <img
+          class="post-image"
+          src="https://miro.medium.com/max/535/1*iVxJ0sCl3Jta1RvvXdAATQ.png"
+          alt=""
+        />
+        <p class="paragraph">
+          Statements are typical in the imperative programming paradigm. There
+          we have our next word to clarify. The imperative style revolves around
+          writing the instructions (statements). Functional programming, on the
+          other hand, is about describing our data.
+        </p>
+        <p class="paragraph">Here is a quick example.</p>
+        <p class="paragraph">
+          The goal is to receive an array of all the even numbers (2, 4)
+          contained in numbers.
+        </p>
+        <pre class="code-block">
+let numbers = [1, 2, 3, 4]
+
+let evenNumbers = []
+       
+for (let i = 0; i &lt; numbers.length; i++) {
+  let number = numbers[i]
+       
+  if (number % 2 === 0) {
+    evenNumbers.push(number)
+  }
+}
+       
+console.log(evenNumbers)
+</pre
+        >
+        <p class="parapgraph">
+          This code is imperative — it only consists of statements and depends
+          on mutating data (even a global variable).
+        </p>
+      </main>
+    </div>
+  </body>
+</html>

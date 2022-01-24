@@ -203,3 +203,25 @@ main {
 .back-link:hover .back-arrow {
   color: var(--accent-color);
 }
+
+.paragraph {
+  margin-bottom: 0.8rem;
+}
+
+.article-heading {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  color: var(--accent-color);
+}
+
+.post-image {
+  margin: 1.6rem 0;
+}
+
+.code-block {
+  background-color: #212046;
+  border: 1px solid var(--accent-color);
+  padding: 1rem;
+  margin: 1.6rem 0;
+}
