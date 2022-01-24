@@ -9,6 +9,7 @@
   --text-color: #dad0c0;
   --bg-color: #2b2a5c;
   --accent-color: #ab5795;
+  --tint-color: #7a72e5;
 }
 
 * {
@@ -42,6 +43,18 @@ header img {
   margin-bottom: 1rem;
 }
 
+.logo {
+  width: 3rem;
+  height: 3rem;
+  background-image: url("logo.svg");
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.logo:hover {
+  background-image: url("logo_white.svg");
+}
+
 header ul {
   font-weight: 500;
   text-align: center;
@@ -68,6 +81,18 @@ header li a:hover {
 
 main {
   padding: 3rem 0;
+}
+
+.main-heading {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 4px solid var(--accent-color);
+  display: inline-block;
+}
+
+.sub-heading {
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
 }
 
 /* ---------------------- */
@@ -98,4 +123,46 @@ main {
   height: 4px;
   background-color: var(--accent-color);
   margin-bottom: 1.2rem;
+}
+
+/* ---------------------- */
+/* About */
+/* ---------------------- */
+
+.experience {
+  margin-bottom: 1.2rem;
+}
+
+.skill {
+  padding: 0.6rem 0.2rem;
+}
+
+.skill-description {
+  margin-bottom: 0.6rem;
+}
+
+.skill-level {
+  height: 5px;
+  background-color: var(--accent-color);
+}
+
+.skill-html {
+  width: 85%;
+
+  background-color: var(--tint-color);
+}
+
+.skill-css {
+  width: 80%;
+  background-color: #145e98;
+}
+
+.skill-js {
+  width: 90%;
+  background-color: #c8b029;
+}
+
+.skill-react {
+  width: 95%;
+  background-color: var(--accent-color);
 }
